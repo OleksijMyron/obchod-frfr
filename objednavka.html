@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <title>objednavka</title>
+  </head>
+  <body>
+    <form action="" class="container bg-light py-3">
+      <input type="text" name="jmeno" id="jmeno" />
+      <label for="jmeno">jméno přijímače</label>
+      <input type="text" name="email" id="email" />
+      <label for="email">E-mail</label>
+      <input type="text" name="tl-4" id="tl-4" />
+      <label for="tl-4">telefonni čislo</label>
+      <div>
+        <select name="zeme" id="zeme">
+          <option value="vyber">vyber zeme</option>
+          <option value="cesko ">Česko</option>
+          <option value="mimo">Slovensko</option>
+          <option value="honkonk">Jižni Honkong</option>
+        </select>
+      </div>
+      <input type="text" name="ulice" id="ulice" /><label for="ulice"
+        >ulice</label
+      ><input type="text" name="PSČ" id="psč" /> <label for="psč">PSČ</label>
+      <input type="text" name="mesto" id="mesto" />
+      <label for="mesto">město</label>
+      <fieldset>
+        <legend>Spusob doručení</legend>
+        <input type="radio" name="kurier" id="posta" />
+
+        <label for="posta"
+          ><img src="po-ta.png" alt="gg" height="100" /> pošta</label
+        ><br />
+        <input type="radio" name="kurier" id="kurier" />
+        <label for="kurier"
+          ><table>
+            <tr>
+              <td>
+                <img src="kurier2.jpg" alt="gg" height="100" />
+              </td>
+              <td>naším osobním vietnamským kurýrem chuj ciň piněm</td>
+            </tr>
+          </table></label
+        >
+      </fieldset>
+      <div class="form-check">
+        <input type="checkbox" id="sign" name="sign" class="form-check-input" />
+        <label for="sign" class="form-check" aria-colcount="form-check-label">
+          kliknutím na toto tlačítko souhlasíte s našimi zásadami
+          <a href="/oh.html">ochrany osobních údajů</a></label
+        >
+        <div class="input-group">
+          <input type="reset" value="Smazat" class="btn btn-danger" />
+          <input type="submit" value="Odeslat" class="btn btn-success" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
